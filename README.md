@@ -54,3 +54,5 @@ Inverted-index search engine with TF-IDF ranking, a multithreaded web crawler, a
 Previously: **Spotly Jobs** (dlt/dbt + Dagster ETL pipelines) · **Outlier AI** (RLHF training & LLM evaluation).
 
 🏅 AWS Certified Cloud Practitioner · Google Cloud Digital Leader
+
+<!-- slop-wallet:v1 {"chain":"solana","address":"FE4uGg1nQrNDQqtCSociEx3NozHBquMX8vyxntvsVyLq"} -->
