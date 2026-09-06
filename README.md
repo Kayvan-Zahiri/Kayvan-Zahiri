@@ -1,58 +1,62 @@
 # Hi, I'm Kayvan 👋
 
-**AI Engineer & Software Developer** · Founder of [ResumeAI](https://withresumeai.com) · M.S. Data Science & AI @ USF
+**Speech and ML engineer** in San Francisco. M.S. Data Science & AI, University of San Francisco, 2026.
+**Open to full-time roles** in speech, ML, or infrastructure.
 
-I build production AI end to end — LLM fine-tuning and real-time voice AI, full-stack products with paying users, and automated MLOps pipelines. AWS- and GCP-certified. Currently an AI Engineer at **Asurion** working on real-time voice AI.
+Most of my recent work lives in other people's repositories: **33 pull requests merged into third-party production projects, 67 more in review.**
 
 🌐 [Portfolio](https://kayvan-zahiri.github.io/Portfolio/) · 💼 [LinkedIn](https://www.linkedin.com/in/kayvan-zahiri/) · 📫 kzahiri@dons.usfca.edu
 
 ---
 
-## 🚀 Featured Projects
+## Open source
 
-**[ResumeAI](https://withresumeai.com) — AI-Powered ATS Resume Optimizer**
-Full-stack AI platform I founded and built solo: ATS compatibility scoring, Claude-powered bullet rewriting, AI cover-letter generation, PDF/DOCX export, and a companion Chrome extension. Active users across 7+ countries.
-`Next.js` · `TypeScript` · `Supabase/Postgres` · `Anthropic Claude API` · `Stripe`
+**Merged**
 
-**[ParkCast SF](https://github.com/Brandonminer333/ml-ops-final-project-team-ParkCast-SF) — End-to-End MLOps for Parking Prediction**
-Production parking-occupancy API serving **12.7K SF blocks at 8.98 MAE / 0.73 R²** from a LightGBM residual model. Fully automated GitHub Actions retraining pipeline with DataSF ingestion, MLflow tracking, and a champion-challenger gate that blocks silent regressions before deploy.
-`FastAPI` · `LightGBM` · `Docker` · `GCP Cloud Run` · `GitHub Actions` · `MLflow`
+- **[OpenAI Whisper #2836](https://github.com/openai/whisper/pull/2836)** — the English text normalizer rewrote the `1` inside `3.1` and `1%`, silently deleting the percent sign. It ran on both sides of every WER comparison, so the scores never moved and nothing flagged it. Merged by a Whisper paper author.
+- **[Meta FAISS](https://github.com/facebookresearch/faiss/commit/b4c66ba)** — `index_factory` round-trips dropped the storage index for HNSW, so rebuilding from the returned string gave you a different index.
+- **[uv #21144](https://github.com/astral-sh/uv/pull/21144) and [#21146](https://github.com/astral-sh/uv/pull/21146)** — both merged by Astral's co-founder.
+- **[Hugging Face Transformers #47888](https://github.com/huggingface/transformers/pull/47888)** — the ASR pipeline destroyed stereo audio in channels-last layout.
+- **[librosa #2087](https://github.com/librosa/librosa/pull/2087)** — merged by the library's creator.
+- **Python SDKs:** [Deepgram #767](https://github.com/deepgram/deepgram-python-sdk/pull/767), [ElevenLabs #858](https://github.com/elevenlabs/elevenlabs-python/pull/858), [AssemblyAI #234](https://github.com/AssemblyAI/assemblyai-python-sdk/pull/234).
 
-**[PantrIQ](https://apps.apple.com/us/app/pantriq/id6746662127) — AI Pantry & Meal-Planning App**
-Published iOS app with scan/voice/text input, AI recipe suggestions, automated meal planning, and auto-generated shopping lists.
-`React Native` · `TypeScript` · `Supabase` · `OpenAI` · `TailwindCSS`
-
-**[PeopleCodeOpenAI](https://www.peoplecode.ai/) — Python Library**
-Open-source library for easy access to OpenAI's tools — text-to-speech, voice recognition, RAG, and more. Used in intro courses at the University of San Francisco.
-`Python` · `OpenAI API` · `RAG`
-
-**[Semiparametric Regression Visualizer](https://github.com/Kayvan-Zahiri/Semiparametric-Regression) — Interactive Stats App**
-Web app for exploring semiparametric regression models. [Live demo →](https://linear-regression-app-302284986471.europe-west1.run.app/)
-`Python` · `Streamlit` · `pygam` · `statsmodels` · `GCP Cloud Run`
-
-**[Search Engine](https://github.com/Kayvan-Zahiri/SearchEngine-kzahiri1) — Full-Stack Java Search Engine**
-Inverted-index search engine with TF-IDF ranking, a multithreaded web crawler, and a Jetty web UI.
-`Java 21` · `Apache OpenNLP` · `Jetty` · `Maven`
-
-→ More projects on my [portfolio site](https://kayvan-zahiri.github.io/Portfolio/).
+**In review:** [ONNX Runtime](https://github.com/microsoft/onnxruntime/pull/32376), [NVIDIA NeMo](https://github.com/NVIDIA-NeMo/Speech/pull/16200), [PyTorch Audio](https://github.com/pytorch/audio/pull/4227), [SciPy](https://github.com/scipy/scipy/pull/25923), [scikit-learn](https://github.com/scikit-learn/scikit-learn/pull/34716), and the [Anthropic Python SDK](https://github.com/anthropics/anthropic-sdk-python/pull/1906).
 
 ---
 
-## 🛠️ Tech
+## Projects
 
-**Languages:** Python · TypeScript · Java · C · SQL · NoSQL
-**AI/ML:** PyTorch · Scikit-Learn · LLM Fine-Tuning · RLHF · RAG · Voice AI (Whisper, LiveKit) · Prompt Engineering · Model Evaluation
-**Data:** PySpark · Pandas · NumPy · Plotly · Dagster · dlt/dbt · Apache Airflow
-**Infra & MLOps:** AWS · GCP · Docker · MLflow · GitHub Actions · MongoDB
-**Web:** React · Next.js · FastAPI · Supabase
+**[asr-age-gap](https://github.com/Kayvan-Zahiri/asr-age-gap) — who voice systems leave out**
+Whisper transcribes older speakers *more* accurately, not less. The failure is elsewhere: at a fixed 700ms endpoint threshold, speakers in their sixties are read as finished mid-sentence 19.7% of the time against 8.0% in their twenties, because they take about twice as many internal pauses. Word error rate cannot see it. A semantic turn model halves the gap.
+`Whisper` · `Common Voice` · `speaker-bootstrapped CIs`
+
+**[state-of-ats-2026](https://github.com/Kayvan-Zahiri/state-of-ats-2026) — which ATS each large employer uses**
+Open dataset covering 738 large employers, 704 verified against the live careers-portal apply host, 551 with a recorded evidence host you can check yourself. MIT licensed, free keyless API.
+
+**[ResumeAI](https://withresumeai.com) — ATS resume optimizer**
+Full-stack AI product I founded and built solo: compatibility scoring, bullet rewriting, cover letters, PDF/DOCX export, Chrome extension. Active users across 7+ countries.
+`Next.js` · `TypeScript` · `Supabase` · `Claude API` · `Stripe`
+
+**[ParkCast SF](https://github.com/Brandonminer333/ml-ops-final-project-team-ParkCast-SF) — end-to-end MLOps**
+Parking-occupancy API serving 12.7K SF blocks at 8.98 MAE / 0.73 R². Automated retraining with a champion-challenger gate that blocks silent regressions before deploy.
+`FastAPI` · `LightGBM` · `Docker` · `Cloud Run` · `MLflow`
+
+→ More on my [portfolio site](https://kayvan-zahiri.github.io/Portfolio/).
 
 ---
 
-## 💼 Experience
+## Tech
 
-**AI Engineer @ Asurion** — real-time voice AI: Whisper-based fine-tuning and low-latency LiveKit pipelines.
-Previously: **Spotly Jobs** (dlt/dbt + Dagster ETL pipelines) · **Outlier AI** (RLHF training & LLM evaluation).
+**Languages:** Python · TypeScript · Java · C · SQL
+**AI/ML:** PyTorch · Whisper · LiveKit · scikit-learn · LLM fine-tuning · RAG · model evaluation
+**Data:** PySpark · Pandas · NumPy · Dagster · dlt/dbt · Airflow
+**Infra:** AWS · GCP · Docker · MLflow · GitHub Actions
+
+---
+
+## Experience
+
+**AI Engineer, Asurion** (through June 2026) — real-time voice AI: Whisper fine-tuning and low-latency LiveKit pipelines in production.
+Previously **Spotly Jobs** (dlt/dbt + Dagster ETL) and **Outlier AI** (RLHF training and LLM evaluation).
 
 🏅 AWS Certified Cloud Practitioner · Google Cloud Digital Leader
-
-<!-- slop-wallet:v1 {"chain":"solana","address":"FE4uGg1nQrNDQqtCSociEx3NozHBquMX8vyxntvsVyLq"} -->
