@@ -3,7 +3,7 @@
 **Speech and ML engineer** in San Francisco. M.S. Data Science & AI, University of San Francisco, 2026.
 **Open to full-time roles** in speech, ML, or infrastructure.
 
-Most of my recent work lives in other people's repositories: **36 pull requests merged into third-party production projects, 59 more in review.**
+Most of my recent work lives in other people's repositories: **40 pull requests merged into third-party production projects, 57 more in review.**
 
 🌐 [Portfolio](https://kayvan-zahiri.github.io/Portfolio/) · 💼 [LinkedIn](https://www.linkedin.com/in/kayvan-zahiri/) · 📫 kzahiri@dons.usfca.edu
 
