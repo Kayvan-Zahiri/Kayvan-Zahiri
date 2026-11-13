@@ -9,6 +9,14 @@ Most of my recent work lives in other people's repositories: **101 pull requests
 
 ---
 
+## Paid library review
+
+I review SDKs and client libraries for correctness bugs and deliver what I find as pull requests with tests. Fixes merged between Oct 9 and Nov 10, 2026: [SurrealDB](https://github.com/surrealdb/surrealdb.py/pull/410), [Perplexity](https://github.com/perplexityai/perplexity-py/pull/139), [Smartsheet](https://github.com/smartsheet/smartsheet-python-sdk/pull/175), [Materialize](https://github.com/MaterializeInc/terraform-provider-materialize/pull/955), [Airbyte](https://github.com/airbytehq/PyAirbyte/pull/1415), [Weaviate](https://github.com/weaviate/weaviate-python-client/pull/2181), [Storyblok](https://github.com/storyblok/monoblok/pull/886), [Algolia](https://github.com/algolia/api-clients-automation/pull/7187), [DevCycle](https://github.com/DevCycleHQ/python-server-sdk/pull/122), [Keycard](https://github.com/keycardai/python-sdk/pull/372), [Prefect](https://github.com/PrefectHQ/prefect/pull/23270), [Loops](https://github.com/loops-so/loops-go/pull/26), [SingleStore](https://github.com/singlestore-labs/singlestoredb-python/pull/150), [Postmark](https://github.com/ActiveCampaign/postmark-python/pull/39), [turbopuffer](https://github.com/turbopuffer/turbopuffer-python/pull/280), [GrowthBook](https://github.com/growthbook/growthbook-python/pull/150), [DBOS](https://github.com/dbos-inc/dbos-transact-py/pull/888).
+
+If you maintain a library and want a full pass on it, email me at the address above.
+
+---
+
 ## Open source
 
 **Merged**
